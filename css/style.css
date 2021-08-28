@@ -1,7 +1,6 @@
+/* body and others */
 body {
 	font-family: 'Open Sans', sans-serif;
-	/*font-family: Helvetica Neue;*/
-	/*font-family: 'Nunito Sans', sans-serif;*/
 }
 
 p {
@@ -56,7 +55,7 @@ a {
     margin-top: 20px;
 }
 
-/* footer stuff */
+/* footer */
 footer {
     display: block;
     position: sticky;
