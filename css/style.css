@@ -52,6 +52,10 @@ a {
     font-weight: bolder;
 }
 
+.card {
+    margin-top: 20px;
+}
+
 /* footer stuff */
 footer {
     display: block;
