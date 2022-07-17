@@ -42,9 +42,12 @@ a {
 	font-weight: 200;
 }
 
+.extras {
+    position: absolute;
+}
+
 .icon {
-	position:relative;
-	bottom: 3px;
+	position: relative;
 }
 
 .title {
@@ -53,6 +56,14 @@ a {
 
 .card {
     margin-top: 20px;
+}
+
+.fa-envelope {
+    vertical-align: text-top;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* footer */
