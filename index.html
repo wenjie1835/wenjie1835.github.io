@@ -60,13 +60,11 @@
 		    	</div>
 		    </div>
 		    <div class="col">
-		    	<p>I'm a first-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a> where I'm advised by <a href="http://www.byronwallace.com/">Byron Wallace</a>. Broadly, I'm interested in the intersection of natural language processing, human-computer interaction, and healthcare, particularly in domains related to language modeling, intepretability, and the interaction between humans and AI tools. I'm honored to be supported by a Northeastern PhD Fellowship and an <a href="https://www.nsfgrfp.org/">NSF GRFP.</a></p>
+		    	<p>I'm a first-year PhD student at <a href="https://www.northeastern.edu/">Northeastern University</a> where I'm advised by <a href="http://www.byronwallace.com/">Byron Wallace</a> and work closely with <a href="https://baulab.info/">David Bau</a>. Though I'm still pinning down my exact research interests, broadly, I'm interested in the intersection of natural language processing and human-computer interaction, particularly in domains related to language modeling, intepretability, and the interaction between humans and AI tools. I'm honored to be supported by a (Northeastern) Khoury PhD Fellowship and an <a href="https://www.nsfgrfp.org/">NSF GRFP.</a></p>
 
-		    	<p>In the past, I was an undergraduate at the <a href="https://www.washington.edu/">University of Washington</a> where I worked with <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a> on ubiquitous computing for healthcare and with <a href="https://homes.cs.washington.edu/~nasmith/">Noah Smith</a> on natural language processing.</p>
+		    	<p>Before my PhD, I spent a year as an AI Resident with <a href="https://ai.facebook.com/research/">Fundamental AI Research (FAIR)</a> at Meta, working with <a href="https://ai.facebook.com/people/marjan-ghazvininejad/">Marjan Ghazvininejad</a> and <a href="https://ai.facebook.com/people/mike-lewis/">Mike Lewis</a> and collaborating with <a href="http://asli.us/">Asli Celikyilmaz</a> and <a href="https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en">Mona Diab</a> on topics related to prompting and pretrained language modeling. I've also interned at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> where I worked with <a href="https://www.microsoft.com/en-us/research/people/tristan/">Tristan Naumann</a> on building biomedical NLP benchmarks.
 
-		    	<p>I have been fortunate to intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> with <a href="https://www.microsoft.com/en-us/research/people/tristan/">Tristan Naumann</a>, working on building biomedical NLP tools.</p>
-
-		    	<p>Prior to starting my PhD, I spent a wonderful year as an AI Resident with <a href="https://ai.facebook.com/research/">Fundamental AI Research (FAIR)</a> at Meta, working with <a href="https://ai.facebook.com/people/marjan-ghazvininejad/">Marjan Ghazvininejad</a> and <a href="https://ai.facebook.com/people/mike-lewis/">Mike Lewis</a> and collaborating with <a href="http://asli.us/">Asli Celikyilmaz</a> and <a href="https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en">Mona Diab</a> on topics related to prompting and pretrained language modeling.</p>
+		    	<p>In undergrad, I studied computer science at the <a href="https://www.washington.edu/">University of Washington</a>. There, I collaborated with both the <a href="https://dub.washington.edu/">DUB</a> and <a href="https://nlp.washington.edu/">UW NLP</a> research groups, where I worked with <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a> on ubiquitous computing and <a href="https://homes.cs.washington.edu/~nasmith/">Noah Smith</a> on natural language processing, respectively.</p>
 
 		    	<div class="row extras">
 		    		<div class="col">
@@ -96,6 +94,19 @@
 		  <div class="news row mb-3 mx-auto">
 		  	<div class="col">
 		  		<h2 class="news">News</h2>
+		  	</div>
+		  </div>
+
+		  <!-- Newest category -->
+		  <div class="row mx-auto">
+		  	<div class="col col-lg-2 yr">
+		  		May 2023
+		  	</div>
+
+		  	<div class="col">
+		  		<p>
+		  			Our paper, <i>Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)</i>, was accepted into ACL!
+		  		</p>
 		  	</div>
 		  </div>
 
@@ -173,10 +184,41 @@
 	  	<div class="col">
 	  		<h2 class="pubs">Publications</h2>
 	  	</div>
+	  	<div class="publications row mb-3 mx-auto">
+		  	<div class="col">
+		  		<h3 class="year"><b>2023</b></h3>
+		  		<ol class="bibliography2023">
+		  			<li>
+		  				<div class="row">
+		  					<div id="review-lm-as-kbs">
+		  						<div class="title">Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)</div>
+		  						<div class="author">Chantal Shaib, <b>Millicent L. Li</b>, Sebastian Joseph, Iain Marshall, Junyi Jessy Li, Byron C. Wallace</div>
+		  						<div class="periodical">
+		  							<em>Annual Meeting of the Association for Computational Linguistics (ACL), 2023</em>
+		  						</div>
+		  						<div class="links">
+									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+										Abstract
+									</button>
+
+									<div class="collapse" id="collapseExample1">
+										<div class="card card-body">
+											Large language models, particularly GPT-3, are able to produce high quality summaries of general domain news articles in few- and zero-shot settings. However, it is unclear if such models are similarly capable in more specialized, high-stakes domains such as biomedicine. In this paper, we enlist domain experts (individuals with medical training) to evaluate summaries of biomedical articles generated by GPT-3, given zero supervision. We consider both single- and multi-document settings. In the former, GPT-3 is tasked with generating regular and plain-language summaries of articles describing randomized controlled trials; in the latter, we assess the degree to which GPT-3 is able to \emph{synthesize} evidence reported across a collection of articles. We design an annotation scheme for evaluating model outputs, with an emphasis on assessing the factual accuracy of generated summaries. We find that while GPT-3 is able to summarize and simplify single biomedical articles faithfully, it struggles to provide accurate aggregations of findings over multiple documents. We release all data and annotations used in this work.
+										</div>
+									</div>
+
+									<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2305.06299" role="button">HTML</a>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</li>
+		  		</ol>
+		  	</div>
+		  </div>
 		  <div class="publications row mb-3 mx-auto">
 		  	<div class="col">
 		  		<h3 class="year"><b>2022</b></h3>
-		  		<ol class="bibliography2020">
+		  		<ol class="bibliography2022">
 		  			<li>
 		  				<div class="row">
 		  					<div id="review-lm-as-kbs">
@@ -192,11 +234,11 @@
 		  							<em>^ denotes equal supervision</em>
 		  						</div>
 		  						<div class="links">
-									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
 										Abstract
 									</button>
 
-									<div class="collapse" id="collapseExample">
+									<div class="collapse" id="collapseExample2">
 										<div class="card card-body">
 											Recently, there has been a surge of interest in the NLP community on the use of pretrained Language Models (LMs) as Knowledge Bases (KBs). Researchers have shown that LMs trained on a sufficiently large (web) corpus will encode a significant amount of knowledge implicitly in its parameters. The resulting LM can be probed for different kinds of knowledge and thus acting as a KB. This has a major advantage over traditional KBs in that this method requires no human supervision. In this paper, we present a set of aspects that we deem a LM should have to fully act as a KB, and review the recent literature with respect to those aspects.
 										</div>
@@ -222,15 +264,15 @@
 		  						<div class="title">Multi-Channel Facial Photoplethysmography Sensing</div>
 		  						<div class="author">Parker S. Ruth, Jerry Cao, <b>Millicent Li</b>, Jacob E. Sunshine, Edward J. Wang, and Shwetak N. Patel</div>
 		  						<div class="periodical">
-		  							<em>In the International Conference of the IEEE Engineering in Medicine Biology Society (EMBC 2020)</em>
+		  							<em>International Conference of the IEEE Engineering in Medicine Biology Society (EMBC 2020)</em>
 		  						</div>
 		  						<div class="links">
-									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
 										Abstract
 									</button>
 									<a class="btn btn-outline-dark" href="https://ieeexplore.ieee.org/document/9176700" role="button">HTML</a>
 
-									<div class="collapse" id="collapseExample">
+									<div class="collapse" id="collapseExample3">
 										<div class="card card-body">
 											Motivated by the need for continuous cardiovascular monitoring, we present a system for performing photoplethysmography sensing at multiple facial locations. As a proof-of-concept, our system incorporates an optical sensor array into a wearable face mask form factor for application
 											in a surgical hemodynamic monitoring use case. Here we demonstrate that our design can accurately detect pulse timing by validating estimated heart rate against ground truth electrocardiogram recordings. In an experiment across 10 experimental subjects, our system achieves an error standard deviation of 2.84 beats per minute. This system shows promise for
@@ -252,5 +294,5 @@
 	</body>
 
 	<footer>
-	    <p class="copyright">© 2022 Millicent Li. Last updated on 2022-09-09. </p>
+	    <p class="copyright">© 2023 Millicent Li. Last updated on 2023-05-10. </p>
 	</footer>
