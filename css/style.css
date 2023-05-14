@@ -68,15 +68,16 @@ a {
     margin-bottom: 20px;
 }
 
-.txtimg > img {
+.txtimg > photo {
     display: block;
 }
 
-img {
-/*    width: 80%;*/
-/*    height: 100%;*/
+.photo {
     width: 50%;
-    display: auto;
+}
+
+.text {
+    position: relative;
 }
 
 a:hover {
