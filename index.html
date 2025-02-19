@@ -98,12 +98,23 @@
 		  <!-- Newest category -->
   		  <div class="row mx-auto">
 		  	<div class="col col-lg-2 yr">
+		  		January 2025
+		  	</div>
+		  	<div class="col">
+
+		  		<p>
+		  			Our paper, <a href="https://arxiv.org/abs/2410.20056">Multi-Field Adaptive Retrieval</a>, done during my internship at Microsoft Semantic Machines, was accepted to ICLR 2025 as a spotlight (top 5%). Thanks to my amazing co-authors!
+		  		</p>
+		  	</div>
+		  </div>
+  		  <div class="row mx-auto">
+		  	<div class="col col-lg-2 yr">
 		  		October 2024
 		  	</div>
 
 		  	<div class="col">
 		  		<p>
-		  			New preprint on my paper, <a href="https://arxiv.org/abs/2410.20056">Multi-Field Adaptive Retrieval</a>, done during my internship at Microsoft Semantic Machines! 
+		  			New preprint on our paper, <a href="https://arxiv.org/abs/2410.20056">Multi-Field Adaptive Retrieval</a>, done during my internship at Microsoft Semantic Machines! 
 		  		</p>
 		  	</div>
 		  </div>
@@ -137,7 +148,7 @@
 
 		  	<div class="col">
 		  		<p>
-		  			Our paper on <i>Function Vectors in Large Language Models</i> was accepted to ICLR 2024!
+		  			Our paper, <a href="https://arxiv.org/abs/2310.15213">Function Vectors in Large Language Models</a>, was accepted to ICLR 2024!
 		  		</p>
 		  	</div>
 		  </div>
@@ -149,7 +160,7 @@
 
 		  	<div class="col">
 		  		<p>
-		  			Our paper, <i>Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)</i>, was accepted to ACL 2023!
+		  			Our paper, <a href="https://arxiv.org/abs/2305.06299">Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)</a>, was accepted to ACL 2023!
 		  		</p>
 		  	</div>
 		  </div>
@@ -228,35 +239,39 @@
 	  	<div class="col">
 	  		<h2 class="pubs">Publications</h2>
 	  	</div>
+		  <div class="publications row mb-3 mx-auto">
+		  	<div class="col">
+		  		<h3 class="year"><b>2025</b></h3>
+		  		<ol class="bibliography2025">
+		  			<li>
+		  				<div class="row">
+		  					<div id="multifield-adaptive-retrieval">
+		  						<div class="title">Multi-Field Adaptive Retrieval</div>
+		  						<div class="author"><b>Millicent Li</b>, Tongfei Chen, Benjamin Van Durme, Patrick Xia</div>
+		  						<div class="periodical">
+		  							<em> International Conference on Learning Representations (ICLR), 2025</em>
+		  						</div>
+		  						<div class="links">
+									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+										Abstract
+									</button>
+									<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2410.20056" role="button">HTML</a>
+									<div class="collapse" id="collapseExample6">
+										<div class="card card-body">
+											Document retrieval for tasks such as search and retrieval-augmented generation typically involves datasets that are unstructured: free-form text without explicit internal structure in each document. However, documents can have a structured form, consisting of fields such as an article title, message body, or HTML header. To address this gap, we introduce Multi-Field Adaptive Retrieval (MFAR), a flexible framework that accommodates any number of and any type of document indices on structured data. Our framework consists of two main steps: (1) the decomposition of an existing document into fields, each indexed independently through dense and lexical methods, and (2) learning a model which adaptively predicts the importance of a field by conditioning on the document query, allowing on-the-fly weighting of the most likely field(s). We find that our approach allows for the optimized use of dense versus lexical representations across field types, significantly improves in document ranking over a number of existing retrievers, and achieves state-of-the-art performance for multi-field structured data.
+										</div>
+									</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</li>
+		  		</ol>
+		  	</div>
+		  </div>
 	  	<div class="publications row mb-3 mx-auto">
 		  	<div class="col">
 		  		<h3 class="year"><b>2024</b></h3>
 		  		<ol class="bibliography2024">
-		  			<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-	  							<div id="the-quest">
-			  						<div class="title">Multi-Field Adaptive Retrieval</div>
-			  						<div class="author"><b>Millicent Li</b>, Tongfei Chen, Benjamin Van Durme, Patrick Xia</div>
-			  						<div class="periodical">
-			  							<em>ArXiv</em>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-											Abstract
-										</button>
-
-										<div class="collapse" id="collapseExample4">
-											<div class="card card-body">
-												Document retrieval for tasks such as search and retrieval-augmented generation typically involves datasets that are unstructured: free-form text without explicit internal structure in each document. However, documents can have a structured form, consisting of fields such as an article title, message body, or HTML header. To address this gap, we introduce Multi-Field Adaptive Retrieval (MFAR), a flexible framework that accommodates any number of and any type of document indices on structured data. Our framework consists of two main steps: (1) the decomposition of an existing document into fields, each indexed independently through dense and lexical methods, and (2) learning a model which adaptively predicts the importance of a field by conditioning on the document query, allowing on-the-fly weighting of the most likely field(s). We find that our approach allows for the optimized use of dense versus lexical representations across field types, significantly improves in document ranking over a number of existing retrievers, and achieves state-of-the-art performance for multi-field structured data.
-											</div>
-										</div>
-										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2410.20056" role="button">HTML</a>
-			  						</div>
-			  					</div>
-			  				</div>
-		  				</div>
-		  			</li>
 		  			<li>
 		  				<div class="row">
 		  					<div class="inner_row" style="margin-bottom: 30px;">
@@ -267,16 +282,15 @@
 			  							<em>ArXiv</em>
 			  						</div>
 			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
 											Abstract
 										</button>
-
-										<div class="collapse" id="collapseExample3">
+										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2408.01416" role="button">HTML</a>
+										<div class="collapse" id="collapseExample5">
 											<div class="card card-body">
 												Interpretability provides a toolset for understanding how and why neural networks behave in certain ways. However, there is little unity in the field: most studies employ ad-hoc evaluations and do not share theoretical foundations, making it difficult to measure progress and compare the pros and cons of different techniques. Furthermore, while mechanistic understanding is frequently discussed, the basic causal units underlying these mechanisms are often not explicitly defined. In this paper, we propose a perspective on interpretability research grounded in causal mediation analysis. Specifically, we describe the history and current state of interpretability taxonomized according to the types of causal units (mediators) employed, as well as methods used to search over mediators. We discuss the pros and cons of each mediator, providing insights as to when particular kinds of mediators and search methods are most appropriate depending on the goals of a given study. We argue that this framing yields a more cohesive narrative of the field, as well as actionable insights for future work. Specifically, we recommend a focus on discovering new mediators with better trade-offs between human-interpretability and compute-efficiency, and which can uncover more sophisticated abstractions from neural networks than the primarily linear mediators employed in current work. We also argue for more standardized evaluations that enable principled comparisons across mediator types, such that we can better understand when particular causal units are better suited to particular use cases.
 											</div>
 										</div>
-										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2408.01416" role="button">HTML</a>
 			  						</div>
 			  					</div>
 			  				</div>
@@ -292,16 +306,15 @@
 			  							<em> International Conference on Learning Representations (ICLR), 2024</em>
 			  						</div>
 			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
 											Abstract
 										</button>
-
-										<div class="collapse" id="collapseExample2">
+										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2310.15213" role="button">HTML</a>
+										<div class="collapse" id="collapseExample4">
 											<div class="card card-body">
 												We report the presence of a simple mechanism that represents an input-output function as a vector within autoregressive transformer language models. Using causal mediation analysis on a diverse range of in-context-learning (ICL) tasks, we find that a small number attention heads transport a compact representation of the demonstrated task, which we call a function vector (FV). We test the causal effects of FVs in a variety of input contexts and find that for many tasks FVs are robust to changes in context, i.e., they trigger execution of the task on inputs such as zero-shot and natural text settings that do not resemble ICL. By measuring the causal effects of the FV at each layer of the network, we find that FVs do not directly perform a task through embedding arithmetic, but rather they trigger the model to perform the task using potentially nonlinear computations. Finally, we investigate the internal structure of FVs and find while that they contain information that directly encodes the output space of the function, this information alone is not sufficient to reconstruct an FV. Taken together, our findings suggest that LLMs contain internal abstractions of general-purpose functions that can be invoked in a variety of contexts.
 											</div>
 										</div>
-										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2310.15213" role="button">HTML</a>
 			  						</div>
 			  					</div>
 			  				</div>
@@ -324,17 +337,15 @@
 			  							<em>Annual Meeting of the Association for Computational Linguistics (ACL), 2023</em>
 			  						</div>
 			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
 											Abstract
 										</button>
-
-										<div class="collapse" id="collapseExample1">
+										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2305.06299" role="button">HTML</a>
+										<div class="collapse" id="collapseExample3">
 											<div class="card card-body">
 												Large language models, particularly GPT-3, are able to produce high quality summaries of general domain news articles in few- and zero-shot settings. However, it is unclear if such models are similarly capable in more specialized, high-stakes domains such as biomedicine. In this paper, we enlist domain experts (individuals with medical training) to evaluate summaries of biomedical articles generated by GPT-3, given zero supervision. We consider both single- and multi-document settings. In the former, GPT-3 is tasked with generating regular and plain-language summaries of articles describing randomized controlled trials; in the latter, we assess the degree to which GPT-3 is able to \emph{synthesize} evidence reported across a collection of articles. We design an annotation scheme for evaluating model outputs, with an emphasis on assessing the factual accuracy of generated summaries. We find that while GPT-3 is able to summarize and simplify single biomedical articles faithfully, it struggles to provide accurate aggregations of findings over multiple documents. We release all data and annotations used in this work.
 											</div>
 										</div>
-
-										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2305.06299" role="button">HTML</a>
 			  						</div>
 			  					</div>
 			  				</div>
@@ -365,16 +376,13 @@
 									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
 										Abstract
 									</button>
-
+									<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2204.06031" role="button">HTML</a>
+									<a class="btn btn-outline-dark" href="https://bkhmsi.github.io/lms-as-kbs/" role="button">Project Website</a>
 									<div class="collapse" id="collapseExample2">
 										<div class="card card-body">
 											Recently, there has been a surge of interest in the NLP community on the use of pretrained Language Models (LMs) as Knowledge Bases (KBs). Researchers have shown that LMs trained on a sufficiently large (web) corpus will encode a significant amount of knowledge implicitly in its parameters. The resulting LM can be probed for different kinds of knowledge and thus acting as a KB. This has a major advantage over traditional KBs in that this method requires no human supervision. In this paper, we present a set of aspects that we deem a LM should have to fully act as a KB, and review the recent literature with respect to those aspects.
 										</div>
 									</div>
-
-									<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2204.06031" role="button">HTML</a>
-
-									<a class="btn btn-outline-dark" href="https://bkhmsi.github.io/lms-as-kbs/" role="button">Project Website</a>
 		  						</div>
 		  					</div>
 		  				</div>
@@ -395,12 +403,12 @@
 		  							<em>International Conference of the IEEE Engineering in Medicine Biology Society (EMBC 2020)</em>
 		  						</div>
 		  						<div class="links">
-									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 										Abstract
 									</button>
 									<a class="btn btn-outline-dark" href="https://ieeexplore.ieee.org/document/9176700" role="button">HTML</a>
 
-									<div class="collapse" id="collapseExample3">
+									<div class="collapse" id="collapseExample">
 										<div class="card card-body">
 											Motivated by the need for continuous cardiovascular monitoring, we present a system for performing photoplethysmography sensing at multiple facial locations. As a proof-of-concept, our system incorporates an optical sensor array into a wearable face mask form factor for application
 											in a surgical hemodynamic monitoring use case. Here we demonstrate that our design can accurately detect pulse timing by validating estimated heart rate against ground truth electrocardiogram recordings. In an experiment across 10 experimental subjects, our system achieves an error standard deviation of 2.84 beats per minute. This system shows promise for
@@ -422,5 +430,5 @@
 	</body>
 
 	<footer>
-	    <p class="copyright">© 2024 Millicent Li. Last updated on 2024-12-21. </p>
+	    <p class="copyright">© 2024 Millicent Li. Last updated on 2025-02-19. </p>
 	</footer>
