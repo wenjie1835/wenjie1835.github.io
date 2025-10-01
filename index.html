@@ -95,7 +95,18 @@
 		  		<h2 class="news">News</h2>
 		  	</div>
 		  </div>
-		  <!-- Newest category -->
+<!-- Newest category -->
+  		  <div class="row mx-auto">
+		  	<div class="col col-lg-2 yr">
+		  		October 2025
+		  	</div>
+		  	<div class="col">
+
+		  		<p>
+		  			We investigate existing interpretability methods on decoding activations into natural language in our new preprint, <a href="https://arxiv.org/abs/2509.13316">Do Natural Language Descriptions of Model Activations Convey Privileged Information?</a>
+		  		</p>
+		  	</div>
+		  </div>
   		  <div class="row mx-auto">
 		  	<div class="col col-lg-2 yr">
 		  		January 2025
@@ -245,35 +256,29 @@
 		  		<ol class="bibliography2025">
 		  			<li>
 		  				<div class="row">
-		  					<div id="multifield-adaptive-retrieval">
-		  						<div class="title">Multi-Field Adaptive Retrieval</div>
-		  						<div class="author"><b>Millicent Li</b>, Tongfei Chen, Benjamin Van Durme, Patrick Xia</div>
-		  						<div class="periodical">
-		  							<em> International Conference on Learning Representations (ICLR), 2025</em>
-									<br>
-									<em style="color:red">Spotlight, Top 5%</em>
-		  						</div>
-		  						<div class="links">
-									<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-										Abstract
-									</button>
-									<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2410.20056" role="button">HTML</a>
-									<div class="collapse" id="collapseExample6">
-										<div class="card card-body">
-											Document retrieval for tasks such as search and retrieval-augmented generation typically involves datasets that are unstructured: free-form text without explicit internal structure in each document. However, documents can have a structured form, consisting of fields such as an article title, message body, or HTML header. To address this gap, we introduce Multi-Field Adaptive Retrieval (MFAR), a flexible framework that accommodates any number of and any type of document indices on structured data. Our framework consists of two main steps: (1) the decomposition of an existing document into fields, each indexed independently through dense and lexical methods, and (2) learning a model which adaptively predicts the importance of a field by conditioning on the document query, allowing on-the-fly weighting of the most likely field(s). We find that our approach allows for the optimized use of dense versus lexical representations across field types, significantly improves in document ranking over a number of existing retrievers, and achieves state-of-the-art performance for multi-field structured data.
+		  					<div class="inner_row" style="margin-bottom: 30px;">
+			  					<div id="verbalization">
+			  						<div class="title">Do Natural Language Descriptions of Model Activations Convey Privileged Information?</div>
+			  						<div class="author"><b>Millicent Li</b>, Alberto Mario Ceballos Arroyo, Giordano Rogers, Naomi Saphra, Byron C. Wallace</div>
+			  						<div class="periodical">
+			  							<em> arXiv, 2025</em>
+										<br>
+			  						</div>
+			  						<div class="links">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+											Abstract
+										</button>
+										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2509.13316" role="button">HTML</a>
+										<div class="collapse" id="collapseExample7">
+											<div class="card card-body">
+												Recent interpretability methods have proposed to translate LLM internal representations into natural language descriptions using a second verbalizer LLM. This is intended to illuminate how the target model represents and operates on inputs. But do such activation verbalization approaches actually provide privileged knowledge about the internal workings of the target model, or do they merely convey information about its inputs? We critically evaluate popular verbalization methods across datasets used in prior work and find that they can succeed at benchmarks without any access to target model internals, suggesting that these datasets may not be ideal for evaluating verbalization methods. We then run controlled experiments which reveal that verbalizations often reflect the parametric knowledge of the verbalizer LLM which generated them, rather than the knowledge of the target LLM whose activations are decoded. Taken together, our results indicate a need for targeted benchmarks and experimental controls to rigorously assess whether verbalization methods provide meaningful insights into the operations of LLMs.
+											</div>
 										</div>
-									</div>
-		  						</div>
-		  					</div>
-		  				</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
 		  			</li>
-		  		</ol>
-		  	</div>
-		  </div>
-	  	<div class="publications row mb-3 mx-auto">
-		  	<div class="col">
-		  		<h3 class="year"><b>2024</b></h3>
-		  		<ol class="bibliography2024">
 		  			<li>
 		  				<div class="row">
 		  					<div class="inner_row" style="margin-bottom: 30px;">
@@ -281,7 +286,7 @@
 			  						<div class="title">The Quest for the Right Mediator: A History, Survey, and Theoretical Grounding of Causal Interpretability</div>
 			  						<div class="author">Aaron Mueller, ... <b>Millicent Li</b> ... Yonatan Belinkov</div>
 			  						<div class="periodical">
-			  							<em>ArXiv</em>
+			  							<em>Computational Linguistics (CL), 2025</em>
 			  						</div>
 			  						<div class="links">
 										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
@@ -298,6 +303,40 @@
 			  				</div>
 		  				</div>
 		  			</li>
+		  			<li>
+		  				<div class="row">
+		  					<div class="inner_row" style="margin-bottom: 30px;">
+
+			  					<div id="multifield-adaptive-retrieval">
+			  						<div class="title">Multi-Field Adaptive Retrieval</div>
+			  						<div class="author"><b>Millicent Li</b>, Tongfei Chen, Benjamin Van Durme, Patrick Xia</div>
+			  						<div class="periodical">
+			  							<em> International Conference on Learning Representations (ICLR), 2025</em>
+										<br>
+										<em style="color:red">Spotlight, Top 5%</em>
+			  						</div>
+			  						<div class="links">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+											Abstract
+										</button>
+										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2410.20056" role="button">HTML</a>
+										<div class="collapse" id="collapseExample6">
+											<div class="card card-body">
+												Document retrieval for tasks such as search and retrieval-augmented generation typically involves datasets that are unstructured: free-form text without explicit internal structure in each document. However, documents can have a structured form, consisting of fields such as an article title, message body, or HTML header. To address this gap, we introduce Multi-Field Adaptive Retrieval (MFAR), a flexible framework that accommodates any number of and any type of document indices on structured data. Our framework consists of two main steps: (1) the decomposition of an existing document into fields, each indexed independently through dense and lexical methods, and (2) learning a model which adaptively predicts the importance of a field by conditioning on the document query, allowing on-the-fly weighting of the most likely field(s). We find that our approach allows for the optimized use of dense versus lexical representations across field types, significantly improves in document ranking over a number of existing retrievers, and achieves state-of-the-art performance for multi-field structured data.
+											</div>
+										</div>
+			  						</div>
+			  					</div>
+			  				</div>
+		  				</div>
+		  			</li>
+		  		</ol>
+		  	</div>
+		  </div>
+	  	<div class="publications row mb-3 mx-auto">
+		  	<div class="col">
+		  		<h3 class="year"><b>2024</b></h3>
+		  		<ol class="bibliography2024">
 		  			<li>
 		  				<div class="row">
 		  					<div class="inner_row" style="margin-bottom: 30px;">
