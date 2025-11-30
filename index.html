@@ -188,11 +188,11 @@
 										<br>
 			  						</div>
 			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseDiagECG" aria-expanded="false" aria-controls="collapseDiagECG">
 											Abstract
 										</button>
 										<a class="btn btn-outline-dark" href="https://openreview.net/pdf?id=Zq608ozial" role="button">HTML</a>
-										<div class="collapse" id="collapseExample7">
+										<div class="collapse" id="collapseDiagECG">
 											<div class="card card-body">
 												Electrocardiography (ECG) plays a central role in cardiovascular diagnostics, yet existing automated approaches often struggle to generalize across clinical tasks and offer limited support for open-ended reasoning. We present DiagECG, a novel framework that integrates time-series (TS) and language modeling by enabling large language models (LLMs) to process 12-lead ECG signals for clinical text generation tasks. Our approach discretizes continuous ECG embeddings into symbolic tokens using a lead-independent encoder and quantization module. These symbolic representations are then used to extend the LLM’s vocabulary with ECG-specific tokens, allowing the model to handle both ECG and natural language inputs in a unified manner. To bridge the modality gap, we pretrain the model on an autoregressive ECG forecasting task, enabling the LLM to model temporal dynamics using its native language modeling capabilities. Finally, we perform instruction tuning on both ECG question answering and diagnostic report generation. Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning.
 											</div>
