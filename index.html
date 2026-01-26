@@ -181,179 +181,180 @@
 
 		  <!-- This is for publications -->
 		  <!-- To add a new category, copy paste a row chunk -->
-	  	<div class="col">
-	  		<h2 class="pubs">Publications</h2>
-	  	</div>
+		<div class="col">
+		    <h2 class="pubs">Publications</h2>
+		</div>
+		
 		<div class="publications row mb-3 mx-auto">
-			  	<div class="col">
-			  		<h3 class="year"><b>2026</b></h3>
-			  		<ol class="bibliography2026">
-						<li>
-			  				<div class="row">
-			  					<div class="inner_row" style="margin-bottom: 30px;">
-				  					<div id="sae-amortized">
-				  						<div class="title">The Price of Amortized Inference in Sparse Autoencoders</div>
-				  						<div class="author"><b>Wenjie Sun</b>, Di Wang, Lijie Hu</div>
-				  						<div class="periodical">
-				  							<em> ICLR, 2026 (Poster)</em>
-											<br>
-				  						</div>
-				  						<div class="links">
-											<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseSAE" aria-expanded="false" aria-controls="collapseSAE">
-												Abstract
-											</button>
-											<a class="btn btn-outline-dark" href="https://openreview.net/forum?id=33wY6AI13k" role="button">HTML</a>
-											<div class="collapse" id="collapseSAE">
-												<div class="card card-body">
-													Polysemy has long been a major challenge in Mechanistic Interpretability (MI), with Sparse Autoencoders (SAEs) emerging as a promising solution. SAEs employ a shared encoder to map inputs to sparse codes, thereby amortizing inference costs across all instances. However, this parameter-sharing paradigm inherently conflicts with the MI community's emphasis on instance-level optimality, including the consistency and stitchability of monosemantic features. We first reveal the trade-off relationships among various pathological phenomena, including feature absorption, feature splitting, dead latents, and dense latents under global reconstruction-sparsity constraints from the perspective of training dynamics, finding that increased sparsity typically exacerbates multiple pathological phenomena, and attribute this trade-off relationship to amortized inference. By reducing reliance on amortized inference through the introduction of semi-amortized and non-amortized approaches, we observed that various pathological indicators were significantly mitigated, thereby validating our hypothesis. As the first step in this direction, we propose Local Amortized SAE (LocA-SAE), a method that groups polysemantically close latents based on the angular variance. This method is designed to balance the computational cost of per-sample optimization with the limitations of amortized inference. Our work provides insights for understanding SAEs and advocates for a paradigm shift in future research on polysemy disentanglement. The code is available at https://github.com/wenjie1835/sae-amortization.
-												</div>
-											</div>
-				  						</div>
-				  					</div>
-				  				</div>
-				  			</div>
-			  			</li>
-						<li>
-			  				<div class="row">
-			  					<div class="inner_row" style="margin-bottom: 30px;">
-				  					<div id="verbalization">
-				  						<div class="title">DiagECG: Discretized ECG Tokenization for Diagnostic Reasoning</div>
-				  						<div class="author">Jinning Yang, <b>Wenjie Sun</b>, Shi Wen</div>
-				  						<div class="periodical">
-				  							<em> AAAI, 2026 (Poster)</em>
-											<br>
-				  						</div>
-				  						<div class="links">
-											<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseDiagECG" aria-expanded="false" aria-controls="collapseDiagECG">
-												Abstract
-											</button>
-											<a class="btn btn-outline-dark" href="https://openreview.net/pdf?id=Zq608ozial" role="button">HTML</a>
-											<div class="collapse" id="collapseDiagECG">
-												<div class="card card-body">
-													Electrocardiography (ECG) plays a central role in cardiovascular diagnostics, yet existing automated approaches often struggle to generalize across clinical tasks and offer limited support for open-ended reasoning. We present DiagECG, a novel framework that integrates time-series (TS) and language modeling by enabling large language models (LLMs) to process 12-lead ECG signals for clinical text generation tasks. Our approach discretizes continuous ECG embeddings into symbolic tokens using a lead-independent encoder and quantization module. These symbolic representations are then used to extend the LLM’s vocabulary with ECG-specific tokens, allowing the model to handle both ECG and natural language inputs in a unified manner. To bridge the modality gap, we pretrain the model on an autoregressive ECG forecasting task, enabling the LLM to model temporal dynamics using its native language modeling capabilities. Finally, we perform instruction tuning on both ECG question answering and diagnostic report generation. Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning.
-												</div>
-											</div>
-				  						</div>
-				  					</div>
-				  				</div>
-				  			</div>
-			  			</li>
-					</ol>
-				</div>
-			  </div>
-		  <div class="publications row mb-3 mx-auto">
-		  	<div class="col">
-		  		<h3 class="year"><b>2025</b></h3>
-		  		<ol class="bibliography2025">
-		  			<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-			  					<div id="verbalization">
-			  						<div class="title">Sparsification and Reconstruction from the Perspective of Representation Geometry</div>
-			  						<div class="author"><b>Wenjie Sun</b>, Bingzhe Wu, Zhile Yang, Chengke Wu</div>
-			  						<div class="periodical">
-			  							<em> arXiv, 2025</em>
-										<br>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
-											Abstract
-										</button>
-										<a class="btn btn-outline-dark" href="https://arxiv.org/abs/2505.22506" role="button">HTML</a>
-										<div class="collapse" id="collapseExample7">
-											<div class="card card-body">
-												Sparse Autoencoders (SAEs) have emerged as a predominant tool in mechanistic interpretability, aiming to identify interpretable monosemantic features. However, how does sparse encoding organize the representations of activation vector from language models? What is the relationship between this organizational paradigm and feature disentanglement as well as reconstruction performance? To address these questions, we propose the SAEMA, which validates the stratified structure of the representation by observing the variability of the rank of the symmetric semipositive definite (SSPD) matrix corresponding to the modal tensor unfolded along the latent tensor with the level of noise added to the residual stream. To systematically investigate how sparse encoding alters representational structures, we define local and global representations, demonstrating that they amplify inter-feature distinctions by merging similar semantic features and introducing additional dimensionality. Furthermore, we intervene the global representation from an optimization perspective, proving a significant causal relationship between their separability and the reconstruction performance. This study explains the principles of sparsity from the perspective of representational geometry and demonstrates the impact of changes in representational structure on reconstruction performance. Particularly emphasizes the necessity of understanding representations and incorporating representational constraints, providing empirical references for developing new interpretable tools and improving SAEs.
-											</div>
-										</div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  			</div>
-		  			</li>
-		  			<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-	  							<div id="the-quest">
-			  						<div class="title">CauseTerML: Causal Learning via Term Mining for Assessing Review Discrepancies</div>
-			  						<div class="author"><b>Wenjie Sun</b>, Chengke Wu ... Zhile Yang</div>
-			  						<div class="periodical">
-			  							<em>IEEE Transactions on Artificial Intelligence (<b>TAI</b>), 2025</em>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-											Abstract
-										</button>
-										<a class="btn btn-outline-dark" href="https://ieeexplore.ieee.org/abstract/document/10782990" role="button">HTML</a>
-										<div class="collapse" id="collapseExample5">
-											<div class="card card-body">
-												Innovation is a key driver of modern economic and technological development. Correct and equitable identification of innovation is essential for promoting market competitiveness and ensuring the optimal allocation of resources. Existing research on innovation evaluation mainly focuses on qualitative or quantitative evaluation of the results, while ignoring potential biases in the application process. This work investigates an unexplored issue in the field of innovation evaluation: Whether the technicality of the title of an application affects its degree of attention in the review process? The key lies in two aspects: how to evaluate the technicality of the title and how to quantify this effect. To achieve this goal, we combine the term extraction schemes and causal inference techniques by modelling the fairness detection task in a causal diagram, and propose a novel framework called CauseTerML. The framework can be applied to fairness detection in a variety of application scenarios. Extensive experiments on a real-world patent dataset validate the effectiveness of CauseTerML.
-											</div>
-										</div>
-			  						</div>
-			  					</div>
-			  				</div>
-		  				</div>
-		  			</li>
-		  			<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-
-			  					<div id="multifield-adaptive-retrieval">
-			  						<div class="title">Fine-tuning enables state of health estimation for lithium-ion batteries via a time series foundation model</div>
-			  						<div class="author"><b>Wenjie Sun</b>, Chengke Wu ... Wenjiao Yao</div>
-			  						<div class="periodical">
-			  							<em> Energy, 2025</em>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-											Abstract
-										</button>
-										<a class="btn btn-outline-dark" href="https://www.sciencedirect.com/science/article/abs/pii/S0360544224039550" role="button">HTML</a>
-										<div class="collapse" id="collapseExample6">
-											<div class="card card-body">
-												Accurate estimation of the State of Health (SOH) of lithium-ion batteries (LIBs) is of significant importance for the utilization of electrical devices powered by batteries, maintenance of battery energy storage equipment, and economic considerations for battery storage applications. Data-driven methods have gained increased attention due to their simple modeling and real-time learning capabilities. However, these methods have been constrained by cumbersome feature engineering and limited model transferability. Considering the emergence of time series foundation models, this study fine-tunes TimeGPT using cycling data from 143 LIBs with six different cathode materials to enhance the model’s accuracy and generalization capability in SOH estimation. Experimental results demonstrate that the fine-tuned model can adapt to various LIBs and operating conditions, exhibiting strong adaptability and transferability. After 100 steps of fine-tuning, the model maintains an RMSE below 1.06% and MAE below 0.59% across different Test sets, achieving an average reduction of 21.55% in RMSE and 13.55% in MAE compared to zero-shot inference. This research treats LIBs SOH estimation as a time series predication downstream task, validates the feasibility of fine-tuning, and provides a new solution for developing next-generation battery management systems.
-
-											</div>
-										</div>
-			  						</div>
-			  					</div>
-			  				</div>
-		  				</div>
-		  			</li>
-		  		</ol>
-		  	</div>
-		  </div>
-	  	<div class="publications row mb-3 mx-auto">
-		  	<div class="col">
-		  		<h3 class="year"><b>2024</b></h3>
-		  		<ol class="bibliography2024">
-		  			<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-	  							<div id="function-vectors">
-			  						<div class="title">State-of-charge estimation of sodium-ion batteries: A fusion deep learning approach</div>
-			  						<div class="author"><b>Wenjie Sun</b>, Huan Xu ... Zhile Yang</div>
-			  						<div class="periodical">
-			  							<em> Journal of Energy Storage, 2024</em>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-											Abstract
-										</button>
-										<a class="btn btn-outline-dark" href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X24011125" role="button">HTML</a>
-										<div class="collapse" id="collapseExample4">
-											<div class="card card-body">
-												Sodium-ion batteries (SIBs) have shown great promise as an alternative to lithium-ion batteries (LIBs) due to abundant sodium resources. Accurate and universal state of charge (SOC) estimation is essential for building an effective battery management system (BMS) for these emerging batteries. However, traditional SOC estimation methods for LIBs cannot be directly applied to SIBs due to significant differences in charge–discharge mechanisms and electrochemical characteristics. To address challenges with SIBs, this study proposes a novel framework integrating deep learning models. The BiLSTM is implemented to learn patterns from current and voltage time series. Additionally, the N-BEATS network extracts high-level features without manual feature engineering to mitigate the low sensitivity of SOC to voltage. By combining strengths of both networks, the fused model enhances SOC prediction robustness. Specifically, the proposed model is trained under various operating conditions and evaluated on both training and untrained datasets. Experiments demonstrate the fused model reduces root mean square error (RMSE) by 11.24% and 74.44% compared to individual N-BEATS and BiLSTM networks. The SOC estimation achieves mean absolute error (MAE) and RMSE below 0.30% and 0.39%, respectively. This research can inform the development of effective BMS for practical applications of SIBs, paving the way to the application of the new battery type.
-											</div>
-										</div>
-			  						</div>
-			  					</div>
-			  				</div>
-		  				</div>
-		  			</li>
-		  		</ol>
-		  	</div>
-		  </div>
+		    <div class="col">
+		        <h3 class="year"><b>2026</b></h3>
+		        <ol class="bibliography2026">
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="sae-amortized">
+		                            <div class="title">The Price of Amortized Inference in Sparse Autoencoders</div>
+		                            <div class="author"><b>Wenjie Sun</b>, Di Wang, Lijie Hu</div>
+		                            <div class="periodical">
+		                                <em> ICLR, 2026 (Poster)</em>
+		                                <br>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseSAE" aria-expanded="false" aria-controls="collapseSAE">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://openreview.net/forum?id=33wY6AI13k" role="button">HTML</a>
+		                                <div class="collapse" id="collapseSAE">
+		                                    <div class="card card-body">
+		                                        Polysemy has long been a major challenge in Mechanistic Interpretability (MI), with Sparse Autoencoders (SAEs) emerging as a promising solution. SAEs employ a shared encoder to map inputs to sparse codes, thereby amortizing inference costs across all instances. However, this parameter-sharing paradigm inherently conflicts with the MI community's emphasis on instance-level optimality, including the consistency and stitchability of monosemantic features. We first reveal the trade-off relationships among various pathological phenomena, including feature absorption, feature splitting, dead latents, and dense latents under global reconstruction-sparsity constraints from the perspective of training dynamics, finding that increased sparsity typically exacerbates multiple pathological phenomena, and attribute this trade-off relationship to amortized inference. By reducing reliance on amortized inference through the introduction of semi-amortized and non-amortized approaches, we observed that various pathological indicators were significantly mitigated, thereby validating our hypothesis. As the first step in this direction, we propose Local Amortized SAE (LocA-SAE), a method that groups polysemantically close latents based on the angular variance. This method is designed to balance the computational cost of per-sample optimization with the limitations of amortized inference. Our work provides insights for understanding SAEs and advocates for a paradigm shift in future research on polysemy disentanglement. The code is available at https://github.com/wenjie1835/sae-amortization.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="verbalization">
+		                            <div class="title">DiagECG: Discretized ECG Tokenization for Diagnostic Reasoning</div>
+		                            <div class="author">Jinning Yang, <b>Wenjie Sun</b>, Shi Wen</div>
+		                            <div class="periodical">
+		                                <em> AAAI, 2026 (Poster)</em>
+		                                <br>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseDiagECG" aria-expanded="false" aria-controls="collapseDiagECG">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://openreview.net/pdf?id=Zq608ozial" role="button">HTML</a>
+		                                <div class="collapse" id="collapseDiagECG">
+		                                    <div class="card card-body">
+		                                        Electrocardiography (ECG) plays a central role in cardiovascular diagnostics, yet existing automated approaches often struggle to generalize across clinical tasks and offer limited support for open-ended reasoning. We present DiagECG, a novel framework that integrates time-series (TS) and language modeling by enabling large language models (LLMs) to process 12-lead ECG signals for clinical text generation tasks. Our approach discretizes continuous ECG embeddings into symbolic tokens using a lead-independent encoder and quantization module. These symbolic representations are then used to extend the LLM’s vocabulary with ECG-specific tokens, allowing the model to handle both ECG and natural language inputs in a unified manner. To bridge the modality gap, we pretrain the model on an autoregressive ECG forecasting task, enabling the LLM to model temporal dynamics using its native language modeling capabilities. Finally, we perform instruction tuning on both ECG question answering and diagnostic report generation. Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		        </ol>
+		    </div>
+		</div>
+		
+		<div class="publications row mb-3 mx-auto">
+		    <div class="col">
+		        <h3 class="year"><b>2025</b></h3>
+		        <ol class="bibliography2025">
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="saema-repro">
+		                            <div class="title">Sparsification and Reconstruction from the Perspective of Representation Geometry</div>
+		                            <div class="author"><b>Wenjie Sun</b>, Bingzhe Wu, Zhile Yang, Chengke Wu</div>
+		                            <div class="periodical">
+		                                <em> arXiv, 2025</em>
+		                                <br>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://arxiv.org/abs/2505.22506" role="button">HTML</a>
+		                                <div class="collapse" id="collapseExample7">
+		                                    <div class="card card-body">
+		                                        Sparse Autoencoders (SAEs) have emerged as a predominant tool in mechanistic interpretability, aiming to identify interpretable monosemantic features. However, how does sparse encoding organize the representations of activation vector from language models? What is the relationship between this organizational paradigm and feature disentanglement as well as reconstruction performance? To address these questions, we propose the SAEMA, which validates the stratified structure of the representation by observing the variability of the rank of the symmetric semipositive definite (SSPD) matrix corresponding to the modal tensor unfolded along the latent tensor with the level of noise added to the residual stream. To systematically investigate how sparse encoding alters representational structures, we define local and global representations, demonstrating that they amplify inter-feature distinctions by merging similar semantic features and introducing additional dimensionality. Furthermore, we intervene the global representation from an optimization perspective, proving a significant causal relationship between their separability and the reconstruction performance. This study explains the principles of sparsity from the perspective of representational geometry and demonstrates the impact of changes in representational structure on reconstruction performance. Particularly emphasizes the necessity of understanding representations and incorporating representational constraints, providing empirical references for developing new interpretable tools and improving SAEs.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="the-quest">
+		                            <div class="title">CauseTerML: Causal Learning via Term Mining for Assessing Review Discrepancies</div>
+		                            <div class="author"><b>Wenjie Sun</b>, Chengke Wu ... Zhile Yang</div>
+		                            <div class="periodical">
+		                                <em>IEEE Transactions on Artificial Intelligence (<b>TAI</b>), 2025</em>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://ieeexplore.ieee.org/abstract/document/10782990" role="button">HTML</a>
+		                                <div class="collapse" id="collapseExample5">
+		                                    <div class="card card-body">
+		                                        Innovation is a key driver of modern economic and technological development. Correct and equitable identification of innovation is essential for promoting market competitiveness and ensuring the optimal allocation of resources. Existing research on innovation evaluation mainly focuses on qualitative or quantitative evaluation of the results, while ignoring potential biases in the application process. This work investigates an unexplored issue in the field of innovation evaluation: Whether the technicality of the title of an application affects its degree of attention in the review process? The key lies in two aspects: how to evaluate the technicality of the title and how to quantify this effect. To achieve this goal, we combine the term extraction schemes and causal inference techniques by modelling the fairness detection task in a causal diagram, and propose a novel framework called CauseTerML. The framework can be applied to fairness detection in a variety of application scenarios. Extensive experiments on a real-world patent dataset validate the effectiveness of CauseTerML.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="multifield-adaptive-retrieval">
+		                            <div class="title">Fine-tuning enables state of health estimation for lithium-ion batteries via a time series foundation model</div>
+		                            <div class="author"><b>Wenjie Sun</b>, Chengke Wu ... Wenjiao Yao</div>
+		                            <div class="periodical">
+		                                <em> Energy, 2025</em>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://www.sciencedirect.com/science/article/abs/pii/S0360544224039550" role="button">HTML</a>
+		                                <div class="collapse" id="collapseExample6">
+		                                    <div class="card card-body">
+		                                        Accurate estimation of the State of Health (SOH) of lithium-ion batteries (LIBs) is of significant importance for the utilization of electrical devices powered by batteries, maintenance of battery energy storage equipment, and economic considerations for battery storage applications. Data-driven methods have gained increased attention due to their simple modeling and real-time learning capabilities. However, these methods have been constrained by cumbersome feature engineering and limited model transferability. Considering the emergence of time series foundation models, this study fine-tunes TimeGPT using cycling data from 143 LIBs with six different cathode materials to enhance the model’s accuracy and generalization capability in SOH estimation. Experimental results demonstrate that the fine-tuned model can adapt to various LIBs and operating conditions, exhibiting strong adaptability and transferability. After 100 steps of fine-tuning, the model maintains an RMSE below 1.06% and MAE below 0.59% across different Test sets, achieving an average reduction of 21.55% in RMSE and 13.55% in MAE compared to zero-shot inference. This research treats LIBs SOH estimation as a time series predication downstream task, validates the feasibility of fine-tuning, and provides a new solution for developing next-generation battery management systems.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		        </ol>
+		    </div>
+		</div>
+		
+		<div class="publications row mb-3 mx-auto">
+		    <div class="col">
+		        <h3 class="year"><b>2024</b></h3>
+		        <ol class="bibliography2024">
+		            <li>
+		                <div class="row">
+		                    <div class="inner_row" style="margin-bottom: 30px;">
+		                        <div id="function-vectors">
+		                            <div class="title">State-of-charge estimation of sodium-ion batteries: A fusion deep learning approach</div>
+		                            <div class="author"><b>Wenjie Sun</b>, Huan Xu ... Zhile Yang</div>
+		                            <div class="periodical">
+		                                <em> Journal of Energy Storage, 2024</em>
+		                            </div>
+		                            <div class="links">
+		                                <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+		                                    Abstract
+		                                </button>
+		                                <a class="btn btn-outline-dark" href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X24011125" role="button">HTML</a>
+		                                <div class="collapse" id="collapseExample4">
+		                                    <div class="card card-body">
+		                                        Sodium-ion batteries (SIBs) have shown great promise as an alternative to lithium-ion batteries (LIBs) due to abundant sodium resources. Accurate and universal state of charge (SOC) estimation is essential for building an effective battery management system (BMS) for these emerging batteries. However, traditional SOC estimation methods for LIBs cannot be directly applied to SIBs due to significant differences in charge–discharge mechanisms and electrochemical characteristics. To address challenges with SIBs, this study proposes a novel framework integrating deep learning models. The BiLSTM is implemented to learn patterns from current and voltage time series. Additionally, the N-BEATS network extracts high-level features without manual feature engineering to mitigate the low sensitivity of SOC to voltage. By combining strengths of both networks, the fused model enhances SOC prediction robustness. Specifically, the proposed model is trained under various operating conditions and evaluated on both training and untrained datasets. Experiments demonstrate the fused model reduces root mean square error (RMSE) by 11.24% and 74.44% compared to individual N-BEATS and BiLSTM networks. The SOC estimation achieves mean absolute error (MAE) and RMSE below 0.30% and 0.39%, respectively. This research can inform the development of effective BMS for practical applications of SIBs, paving the way to the application of the new battery type.
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </li>
+		        </ol>
+		    </div>
+		</div>
 
 		  <!-- Add a divider -->
 		  <hr>
