@@ -184,38 +184,63 @@
 	  	<div class="col">
 	  		<h2 class="pubs">Publications</h2>
 	  	</div>
-		  <div class="publications row mb-3 mx-auto">
-		  	<div class="col">
-		  		<h3 class="year"><b>2026</b></h3>
-		  		<ol class="bibliography2026">
-					<li>
-		  				<div class="row">
-		  					<div class="inner_row" style="margin-bottom: 30px;">
-			  					<div id="verbalization">
-			  						<div class="title">DiagECG: Discretized ECG Tokenization for Diagnostic Reasoning</div>
-			  						<div class="author">Jinning Yang, <b>Wenjie Sun</b>, Shi Wen</div>
-			  						<div class="periodical">
-			  							<em> AAAI, 2026 (Poster)</em>
-										<br>
-			  						</div>
-			  						<div class="links">
-										<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseDiagECG" aria-expanded="false" aria-controls="collapseDiagECG">
-											Abstract
-										</button>
-										<a class="btn btn-outline-dark" href="https://openreview.net/pdf?id=Zq608ozial" role="button">HTML</a>
-										<div class="collapse" id="collapseDiagECG">
-											<div class="card card-body">
-												Electrocardiography (ECG) plays a central role in cardiovascular diagnostics, yet existing automated approaches often struggle to generalize across clinical tasks and offer limited support for open-ended reasoning. We present DiagECG, a novel framework that integrates time-series (TS) and language modeling by enabling large language models (LLMs) to process 12-lead ECG signals for clinical text generation tasks. Our approach discretizes continuous ECG embeddings into symbolic tokens using a lead-independent encoder and quantization module. These symbolic representations are then used to extend the LLM’s vocabulary with ECG-specific tokens, allowing the model to handle both ECG and natural language inputs in a unified manner. To bridge the modality gap, we pretrain the model on an autoregressive ECG forecasting task, enabling the LLM to model temporal dynamics using its native language modeling capabilities. Finally, we perform instruction tuning on both ECG question answering and diagnostic report generation. Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning.
+		<div class="publications row mb-3 mx-auto">
+			  	<div class="col">
+			  		<h3 class="year"><b>2026</b></h3>
+			  		<ol class="bibliography2026">
+						<li>
+			  				<div class="row">
+			  					<div class="inner_row" style="margin-bottom: 30px;">
+				  					<div id="sae-amortized">
+				  						<div class="title">The Price of Amortized Inference in Sparse Autoencoders</div>
+				  						<div class="author"><b>Wenjie Sun</b>, Di Wang, Lijie Hu</div>
+				  						<div class="periodical">
+				  							<em> ICLR, 2026 (Poster)</em>
+											<br>
+				  						</div>
+				  						<div class="links">
+											<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseSAE" aria-expanded="false" aria-controls="collapseSAE">
+												Abstract
+											</button>
+											<a class="btn btn-outline-dark" href="https://openreview.net/forum?id=33wY6AI13k" role="button">HTML</a>
+											<div class="collapse" id="collapseSAE">
+												<div class="card card-body">
+													Polysemy has long been a major challenge in Mechanistic Interpretability (MI), with Sparse Autoencoders (SAEs) emerging as a promising solution. SAEs employ a shared encoder to map inputs to sparse codes, thereby amortizing inference costs across all instances. However, this parameter-sharing paradigm inherently conflicts with the MI community's emphasis on instance-level optimality, including the consistency and stitchability of monosemantic features. We first reveal the trade-off relationships among various pathological phenomena, including feature absorption, feature splitting, dead latents, and dense latents under global reconstruction-sparsity constraints from the perspective of training dynamics, finding that increased sparsity typically exacerbates multiple pathological phenomena, and attribute this trade-off relationship to amortized inference. By reducing reliance on amortized inference through the introduction of semi-amortized and non-amortized approaches, we observed that various pathological indicators were significantly mitigated, thereby validating our hypothesis. As the first step in this direction, we propose Local Amortized SAE (LocA-SAE), a method that groups polysemantically close latents based on the angular variance. This method is designed to balance the computational cost of per-sample optimization with the limitations of amortized inference. Our work provides insights for understanding SAEs and advocates for a paradigm shift in future research on polysemy disentanglement. The code is available at https://github.com/wenjie1835/sae-amortization.
+												</div>
 											</div>
-										</div>
-			  						</div>
-			  					</div>
-			  				</div>
-			  			</div>
-		  			</li>
-				</ol>
-			</div>
-		  </div>
+				  						</div>
+				  					</div>
+				  				</div>
+				  			</div>
+			  			</li>
+						<li>
+			  				<div class="row">
+			  					<div class="inner_row" style="margin-bottom: 30px;">
+				  					<div id="verbalization">
+				  						<div class="title">DiagECG: Discretized ECG Tokenization for Diagnostic Reasoning</div>
+				  						<div class="author">Jinning Yang, <b>Wenjie Sun</b>, Shi Wen</div>
+				  						<div class="periodical">
+				  							<em> AAAI, 2026 (Poster)</em>
+											<br>
+				  						</div>
+				  						<div class="links">
+											<button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseDiagECG" aria-expanded="false" aria-controls="collapseDiagECG">
+												Abstract
+											</button>
+											<a class="btn btn-outline-dark" href="https://openreview.net/pdf?id=Zq608ozial" role="button">HTML</a>
+											<div class="collapse" id="collapseDiagECG">
+												<div class="card card-body">
+													Electrocardiography (ECG) plays a central role in cardiovascular diagnostics, yet existing automated approaches often struggle to generalize across clinical tasks and offer limited support for open-ended reasoning. We present DiagECG, a novel framework that integrates time-series (TS) and language modeling by enabling large language models (LLMs) to process 12-lead ECG signals for clinical text generation tasks. Our approach discretizes continuous ECG embeddings into symbolic tokens using a lead-independent encoder and quantization module. These symbolic representations are then used to extend the LLM’s vocabulary with ECG-specific tokens, allowing the model to handle both ECG and natural language inputs in a unified manner. To bridge the modality gap, we pretrain the model on an autoregressive ECG forecasting task, enabling the LLM to model temporal dynamics using its native language modeling capabilities. Finally, we perform instruction tuning on both ECG question answering and diagnostic report generation. Without modifying the core model, DiagECG achieves strong performance across tasks while maintaining generalization to out-of-distribution settings. Extensive experiments demonstrate the effectiveness of each component and highlight the potential of integrating symbolic ECG representations into LLMs for medical reasoning.
+												</div>
+											</div>
+				  						</div>
+				  					</div>
+				  				</div>
+				  			</div>
+			  			</li>
+					</ol>
+				</div>
+			  </div>
 		  <div class="publications row mb-3 mx-auto">
 		  	<div class="col">
 		  		<h3 class="year"><b>2025</b></h3>
